@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=poppins");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins" , sans-serif;
+}
+
+body {
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+background: url(wp7459425-valorant-epic-desktop-wallpapers.png);
+background-size: cover;
+background-position: center;
+      }
+    
+
+
+header {
+    position: fixed;
+    top: 2.5%;
+    left: 5%;
+    width: 90%;
+    padding: 20px -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+ 
+.logo {
+    font-size: 2em;
+    color: aqua;
+    user-select : none;
+ }
+
+.navigation a {
+    position: relative;
+    font: size 1.1em; 
+    color: aqua;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+
+}
+.navigation a::after { 
+    content: "";
+    position: absolute;
+    left: 0%;
+    bottom: -6px;
+
+    width: 100%;
+    height: 3px;
+    background: aqua;
+    border-radius: 5px;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform .5s;
+
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+
+}
+
+
+.background {
+    background-image: url(wp7459425-valorant-epic-desktop-wallpapers.png);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+  }
+  
+  
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: -1;
+  }
+  
+
+
+  .content {
+    position: absolute;
+    top: 10%; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+.body {
+   
+        position: relative;
+        font: size 1.1em; 
+        color: aqua;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 40px;
+    
+    }
+    .navigation a::after { 
+        content: "";
+        position: absolute;
+        left: 0%;
+        bottom: -6px;
+    
+        width: 100%;
+        height: 3px;
+        background: aqua;
+        border-radius: 5px;
+        transform-origin: center;
+        transform: scaleX(0);
+        transition: transform .5s;
+    
+    }
+
+
+.path {
+    color: aqua;
+}
+
+
